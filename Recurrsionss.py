@@ -40,3 +40,13 @@ def power(n3,p):
 
 
 print(power(n3,p))
+#Power calculator with reccursion
+print("***************************************************************************************************************")
+N=int(input("Enter the base: "))
+P = int(input("Enter the power: "))
+def power(N, P):
+	if P == 0:
+		return 1
+	return (N*power(N, P-1))
+
+print(power(N,P))
